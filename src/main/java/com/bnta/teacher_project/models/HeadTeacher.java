@@ -16,8 +16,8 @@ public class HeadTeacher {
     private Long id;
     @Column
     private String name;
-    @OneToMany(mappedBy = "headteacher")
-    @JsonIgnoreProperties({"headteacher"})
+    @OneToMany(mappedBy = "headTeacher")
+    @JsonIgnoreProperties({"headTeacher"})
     private List<Teacher> teachers;
 
     public HeadTeacher(String name) {
