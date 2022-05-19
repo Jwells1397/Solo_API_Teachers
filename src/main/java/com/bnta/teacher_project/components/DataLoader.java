@@ -27,15 +27,15 @@ public class DataLoader implements ApplicationRunner {
         Teacher teacher1= new Teacher("Jane", "Maths", headTeacher1);
         teacherRepository.save(teacher1);
 
-        Pet pet2 = new Pet("Ella", "Turtle", vet1);
-        petRepository.save(pet2);
+        HeadTeacher headTeacher2 = new HeadTeacher("Olivia");
+        headTeacherRepository.save(headTeacher2);
 
-        Vet vet2 = new Vet("Joe");
-        vetRepository.save(vet2);
+        Teacher teacher2 = new Teacher("Russell", "Physics", headTeacher2);
+        teacherRepository.save(teacher2);
 
-        Pet pet3 = new Pet("Mabel", "Dog", vet2 );
-        petRepository.save(pet3);
 
+        Teacher teacher3 = new Teacher("Daniel", "Geography", headTeacher2 );
+        teacherRepository.save(teacher3);
 
 
     }
